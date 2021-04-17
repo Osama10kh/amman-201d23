@@ -58,7 +58,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   let msg2 = 'The product of '+a+' and '+b+' and '+c+' is '+multiply+'.';
   return [sum, multiply, msg1, msg2]
 }
-//console.log(sumAndMultiply(4, 7, 5))
+//console.log(sumAndMultiply(4, 7, 5));
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
@@ -82,7 +82,7 @@ function sumArray(sumArr) { //eslint-disable-line
   let msg = testArray[0]+','+testArray[1]+','+testArray[2]+' was passed in as an array of numbers, and '+sum+' is their sum.';
   return[sum, msg]
 }
-//console.log(sumArray())
+//console.log(sumArray());
 // Here is the test for sumArray(); uncomment it to run it
 
 testSumArray(testArray);
@@ -101,11 +101,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+  let multAr = [2, 3, 4];
+  let multiple = multAr[0]*multAr[1]*multAr[2];
+  let msg = 'The numbers '+multAr[0]+','+multAr[1]+','+multAr[2]+' have a product of '+multiple+'.';
+  return[multiple, msg]
 }
-
+//console.log(multiplyArray());
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
